@@ -6,16 +6,16 @@ Students contains three columns: ID, Name and Value.
 
 ```sql
 Coluna  | Tipo
-ID          | Integer
+ID      | Integer
 Name    | String
-Value     | Integer
+Value   | Integer
 ```
 
 The table Notes contains three Integers columns: Grade, Min_Value and Max_Value filled according example bellow:
 
 ```sql
-Grade | Min_Value | Max_Value
-1          | 0                 |  9
+Grade      | Min_Value        | Max_Value
+1          | 0                |  9
 2          | 10               | 19
 3          | 20               | 29
 4          | 30               | 39
@@ -24,7 +24,7 @@ Grade | Min_Value | Max_Value
 7          | 60               | 69
 8          | 70               | 79
 9          | 80               | 89
-10        | 90               | 100          
+10         | 90               | 100          
 ```
 
 Joana gives Eva the task of generating a report containing three columns: Name, Grade and Value. Joana does not want the names of students who received a grade lower than 8. The report must be in descending order by grade, that is, the highest grades are inserted first. If there are more than one student with the same grade (8-10) assigned to them, sort those students in particular by their names in alphabetical order. Finally, if the grade is less than 8, use "NULL" as the name and list them in grades in descending order. If there are more than one student with the same grade (1-7) assigned to them, sort those students in particular by their grades in ascending order.
@@ -35,9 +35,9 @@ Input example
 
 ```sql
 ID | Name           | Value
-1   | Julia             | 81
-2   | Carol            | 68
-3   | Maria           | 99
+1   | Julia         | 81
+2   | Carol         | 68
+3   | Maria         | 99
 4   | Andreia       | 78
 5   | Jaqueline     | 63
 6   | Marcela       | 88
@@ -58,13 +58,13 @@ Explanation
 Consider the following table with the grades assigned to students:
 
 ```sql
-ID  | Name       | Value  | Grade
-1    | Julia         | 81       |   9
-2    | Carol        | 68       |   7
-3    | Maria       | 99       |   10
-4    | Andreia    | 78       |   8
-5    | Jaqueline  | 63       |   7
-6    | Marcela    | 88       |   9
+ID   | Name       | Value  | Grade
+1    | Julia      | 81     |   9
+2    | Carol      | 68     |   7
+3    | Maria      | 99     |   10
+4    | Andreia    | 78     |   8
+5    | Jaqueline  | 63     |   7
+6    | Marcela    | 88     |   9
 ```
 
 Thus, the following students obtained grades 8, 9 or 10:
